@@ -1,0 +1,18 @@
+h1{
+    color: #1E293B;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+button{
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+input, select{
+    background-color: #f1f5f9;
+    border-color: #cbd5e1;
+    transition: border-color 0.2s;
+}
+
+input:focus, select:focus{
+    border-color: #3b82f6;
+}
