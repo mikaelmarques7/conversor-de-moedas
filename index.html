@@ -9,12 +9,12 @@
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
 
-<body class="bg-gray-100 text-gray-900 flex items-center justify-center min-h-screen">
+<body class="bg-gradient-to-r from-indigo-100 via-white to-indigo-100 text-gray-900 flex items-center justify-center min-h-screen transition-all duration-300 ease-in-out">
 
-    <div class="max-w-lg mx-auto mt-10 bg-white p-8 rounded shadow-lg border border-gray-200">
+    <div class="max-w-lg mx-auto mt-10 bg-white p-8 rounded-lg shadow-2x1 border border-gray-300">
         <h1 class="text-4xl font-extrabold text-center text-gray-600 mb-6">Conversor de moeda</h1>
 
-        <div class="mb-4">
+        <div class="mb-5">
             <label for="fromCurrency" class="block text-sm font-medium text-gray-700">De:</label>
             <select id="fromCurrency" class="w-full p-3 border border-gray-300 rounded-lg">
                 <option value="USD">Dólar Americano (USD)</option>
@@ -27,7 +27,7 @@
             </select>
         </div>
 
-        <div class="mb-4">
+        <div class="mb-5">
             <label for="toCurrency" class="block text-sm font-medium text-gray-700">Para:</label>
             <select id="toCurrency" class="w-full p-3 border border-gray-300 rounded-lg ">
                 <option value="USD">Dólar Americano (USD)</option>
@@ -41,15 +41,15 @@
         </div>
 
         <div class="mb-6">
-            <label for="amount" class="block text-sm font-medium text-gray-700">Valor:</label>
-            <input type="number" id="amount" class="w-full p-3 border border-gray-300 rounded-lg shadow-md " placeholder="Digite o valor...">
+            <label for="amount" class="block text-lg font-medium text-gray-700">Valor:</label>
+            <input type="number" id="amount" class="w-full p-3 border border-gray-300 rounded-md shadow-sm focus:border-indigo-500 focus:ring focus:ring-indigo-200 transition ease-in-out" placeholder="Digite o valor...">
         </div>
 
         <button id="convertBtn"
-            class="w-full bg-green-600 text-white p-3 rounded-lg shadow-md hover:bg-green-700 focus:outline-none focus:ring-4 focus:ring-gray-300 transition">Converter</button>
+            class="w-full bg-green-600 text-white p-3 rounded-lg shadow-lg hover:bg-green-700 focus:outline-none focus:ring focus:ring-green-300 transition-transform trasnform hover:scale-105 duration-200 ease-in-out">Converter</button>
 
 
-        <div id="result" class="mt-6 text-lg font-semibold text-center text-gray-800"></div>
+        <div id="result" class="mt-6 text-lg font-semibold text-center text-gray-900"></div>
     </div>
 
     <script src="script.js"></script>
